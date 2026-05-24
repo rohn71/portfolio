@@ -1,0 +1,14 @@
+src/
+  constants.js          ← all data (ROLES, NAME_*, SKILL_TILES, EXPERIENCE_TIMELINE,
+  │                          PROJECT_TIMELINE, EDUCATION, TYPE_META, HANDLES, PROFILE_IMAGE_PATH)
+  utils.js              ← copyToClipboard()
+  hooks/
+    useInView.js        ← IntersectionObserver (fires once, returns [ref, inView])
+    useRoleCycle.js     ← role cycling with fade (returns { roleIdx, visible })
+    useWaveAnimation.js ← RAF wave phase driver (returns wavePhase)
+  components/
+    HeroSection.js      ← render only, imports constants + useRoleCycle + useWaveAnimation
+    AboutSection.js     ← render only, imports PROFILE_IMAGE_PATH
+    SkillsSection.js    ← render only, imports SKILL_TILES + useInView
+    ResumeSection.js    ← render only, imports resume constants
+    ConnectSection.js   ← render only, imports HANDLES + copyToClipboard

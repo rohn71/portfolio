@@ -1,0 +1,99 @@
+.skills-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 1rem;
+}
+
+.skills-heading {
+	font-family: var(--font-head);
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height: 0.9;
+}
+
+.accent-dot {
+	color: var(--accent);
+}
+
+.skills-heading-sub {
+	font-family: var(--font-doodle);
+	color: var(--accent-dim);
+	font-size: 2.5rem;
+}
+
+.skills-grid {
+	margin-top: 1.6rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	gap: 0.85rem;
+}
+
+.skill-tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+	padding: 1.5rem 0.8rem;
+	border-radius: 6px;
+	background: rgba(232, 244, 255, 0.03);
+	border: 1px solid var(--border);
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	/* hidden before entry animation */
+	opacity: 0;
+}
+
+/* entry keyframes */
+@keyframes tile-from-left {
+	from { opacity: 0; transform: translateX(-48px); }
+	to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes tile-from-right {
+	from { opacity: 0; transform: translateX(48px); }
+	to   { opacity: 1; transform: translateX(0); }
+}
+
+.skills-grid--visible .skill-tile[data-dir='left'] {
+	animation: tile-from-left 0.75s ease var(--tile-delay, 0ms) both;
+}
+
+.skills-grid--visible .skill-tile[data-dir='right'] {
+	animation: tile-from-right 0.75s ease var(--tile-delay, 0ms) both;
+}
+
+/* once landed: freeze in place, enable smooth hover transition */
+.skill-tile--landed {
+	opacity: 1;
+	transform: none;
+	animation: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-tile--landed:hover {
+	transform: translateY(-4px);
+	border-color: color-mix(in srgb, var(--tile-glow) 55%, transparent);
+	box-shadow:
+		0 0 14px color-mix(in srgb, var(--tile-glow) 22%, transparent),
+		0 6px 12px rgba(10, 22, 40, 0.2);
+}
+
+.skill-tile-icon {
+	font-size: 2.2rem;
+}
+
+.skill-tile-name {
+	font-size: 0.75rem;
+	color: var(--text-muted);
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+}
+
+@media (max-width: 600px) {
+	.skills-grid {
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	}
+}

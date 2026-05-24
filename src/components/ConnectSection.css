@@ -1,0 +1,99 @@
+.connect-heading {
+	font-family: var(--font-head);
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height: 0.85;
+}
+
+.connect-sub {
+	margin-top: 0.8rem;
+	color: var(--text-muted);
+	max-width: 600px;
+}
+
+.connect-handles {
+	margin-top: 1.3rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.8rem;
+}
+
+.handle-card {
+	text-decoration: none;
+	color: var(--text);
+	padding: 0.9rem;
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.handle-icon {
+	color: var(--accent);
+	font-size: 1.2rem;
+}
+
+.handle-info {
+	display: grid;
+}
+
+.handle-platform {
+	font-size: 0.75rem;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+}
+
+.handle-name {
+	font-weight: 700;
+}
+
+.handle-note {
+	margin-left: auto;
+	font-family: var(--font-doodle);
+	color: var(--text-muted);
+	font-size: 1.25rem;
+}
+
+.connect-email-bar {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.connect-email-label {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.connect-email-btn {
+	background: var(--bg-card);
+	color: var(--text);
+	border: 1px solid var(--border);
+	padding: 0.45rem 0.75rem;
+	cursor: pointer;
+}
+
+.connect-email-btn:hover {
+	border-color: var(--accent);
+}
+
+.connect-footer {
+	margin-top: 2rem;
+	color: var(--text-muted);
+	font-size: 0.8rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.connect-footer-dot {
+	color: var(--accent);
+}
+
+@media (max-width: 800px) {
+	.connect-handles {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Caveat:wght@400;600;700&display=swap');
+
+:root {
+  --bg:         #0a1628;
+  --bg-card:    #0d1f36;
+  --bg-raised:  #122947;
+  --accent:     #f5c842;
+  --accent-dim: #4a9eff;
+  --text:       #e8f4ff;
+  --text-muted: #8ab4d8;
+  --border:     #e8f4ff;
+  --line-soft:  rgba(74, 158, 255, 0.28);
+  --line-dash:  rgba(74, 158, 255, 0.35);
+  --font-head:  'Bebas Neue', sans-serif;
+  --font-mono:  'Space Mono', monospace;
+  --font-doodle:'Caveat', cursive;
+  --shadow:     6px 6px 0px var(--accent);
+  --shadow-sm:  3px 3px 0px var(--accent-dim);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+main {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-top: 1px dashed var(--line-dash);
+}
+
+section:nth-of-type(even) {
+  background: linear-gradient(90deg, rgba(97, 169, 255, 0.05));
+}
+
+.section-label {
+  font-family: var(--font-doodle);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: clamp(3rem, 3vw, 5rem);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.03em;
+  opacity: 0.95;
+}
+
+/* .section-label::before {
+  content: '-';
+  color: var(--accent);
+  font-family: var(--font-doodle);
+  font-size: clamp(3rem, 3vw, 5rem);
+} */
+
+.neu-card {
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.neu-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 var(--accent);
+}
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border: 1.5px solid var(--accent-dim);
+  color: var(--accent-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); }
+::selection { background: var(--accent); color: #0a1628; }
+
+@media (max-width: 768px) {
+  section {
+    padding: 4.5rem 1.2rem;
+  }
+}
