@@ -37,9 +37,9 @@ export const SCRAMBLE_CHARS   = '01110010 11011011 11001001 11010001 11011111 11
 export const PROFILE_IMAGE_PATH = '/images/profile.jpg';
 
 export const BIO_PARAGRAPHS = [
-  `Hey, I'm Rohhun. I build things on the web, mostly React, mostly at the intersection of AI and identity. I'm part of the AI Agents & Marketplace team at Ping Identity, where I went from intern to full-time engineer, and I've been figuring things out ever since.`,
-  `I work across the full stack, React and JavaScript/Typescript on the frontend, Node.js on the backend. Right now I'm leaning harder into backend and AI, always looking for more to explore.`,
-  `When I'm not at a keyboard, I'm on a badminton court, or out for a ride on my bike. Based in Bangalore.`,
+  `Hey, I'm Rohhun. I build things on the web. Mostly React, mostly at the intersection of AI and identity. I'm part of the AI Agents & Marketplace team at Ping Identity, where I grew from intern to full-time engineer, and I've been figuring things out ever since.`,
+  `I work across the full stack: React and JavaScript/TypeScript on the frontend, Node.js on the backend. Right now I'm leaning harder into backend and AI, and I'm always looking for more to explore.`,
+  `When I'm not at a keyboard, I'm playing FIFA, out on a badminton court, or riding my bike. Based in Bangalore.`,
 ];
 
 // ─── Skills ───────────────────────────────────────────────────────────────────

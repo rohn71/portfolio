@@ -101,7 +101,7 @@ export default function ResumeSection() {
           className="resume-download-btn"
           download="Rohhun_Laiju_Resume.pdf"
         >
-          download cv ↓
+          download cv <span className="btn-arrow" aria-hidden="true">↓&#xFE0E;</span>
         </a>
       </div>
 
