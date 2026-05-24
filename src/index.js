@@ -8,3 +8,9 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+const loader = document.getElementById('page-loader');
+if (loader) {
+  loader.classList.add('hidden');
+  loader.addEventListener('transitionend', () => loader.remove(), { once: true });
+}
