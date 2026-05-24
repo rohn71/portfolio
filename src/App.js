@@ -7,6 +7,7 @@ import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ResumeSection from './components/ResumeSection';
 import ConnectSection from './components/ConnectSection';
+import PersonalSection from './components/PersonalSection';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <SkillsSection />
         <ResumeSection />
         <ConnectSection />
+        <PersonalSection />
       </main>
     </div>
   );
