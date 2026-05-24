@@ -39,7 +39,8 @@ export const PROFILE_IMAGE_PATH = '/images/profile.jpg';
 export const BIO_PARAGRAPHS = [
   `Hey, I'm Rohhun. I build things on the web. Mostly React, mostly at the intersection of AI and identity. I'm part of the AI Agents & Marketplace team at Ping Identity, where I grew from intern to full-time engineer, and I've been figuring things out ever since.`,
   `I work across the full stack: React and JavaScript/TypeScript on the frontend, Node.js on the backend. Right now I'm leaning harder into backend and AI, and I'm always looking for more to explore.`,
-  `When I'm not at a keyboard, I'm playing FIFA, out on a badminton court, or riding my bike. Based in Bangalore.`,
+  `When I'm not at a keyboard, I'm playing FIFA, out on a badminton court, or riding my bike.`,
+  ` Based in Bangalore.`,
 ];
 
 // ─── Skills ───────────────────────────────────────────────────────────────────
