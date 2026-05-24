@@ -40,7 +40,7 @@ export default function ConnectSection() {
               <span className="handle-platform">{h.platform}</span>
               <span className="handle-name">{h.handle}</span>
             </div>
-            <span className="handle-note">{h.note} ↗</span>
+            <span className="handle-note">{h.note} ↗&#xFE0E;</span>
           </a>
         ))}
       </div>
