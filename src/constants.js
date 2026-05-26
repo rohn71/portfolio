@@ -78,7 +78,7 @@ export const EXPERIENCE_TIMELINE = [
         role: 'Software Engineer II',
         period: 'April 2026 – Present',
         points: [
-          'Closed a security gap in OAuth 2.0 Token Exchange by introducing an opt-in configuration flag across app-management backend and Authorization Server, enforcing group-membership policies at token issuance with supporting audit events, without new APIs or data stores.',
+          // 'Worked on OAuth 2.0 Token Exchange by introducing an opt-in configuration flag across app-management backend and Authorization Server, enforcing group-membership policies at token issuance with supporting audit events, without new APIs or data stores.',
           'Delivered AI Agent licensing enforcement using dynamic capability checks to hide/disable unlicensed actions, plus contextual upgrade prompts and a Contact Sales CTA for upsell support.',
         ],
       },
